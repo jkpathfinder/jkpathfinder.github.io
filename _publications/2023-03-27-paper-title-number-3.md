@@ -2,7 +2,7 @@
 title: "BTAD: A binary transformer deep neural network model for anomaly detection in multivariate time series data"
 collection: publications
 permalink: /publication/2023-03-27-paper-title-number-3
-excerpt: 'This article introduces the Bi-Transformer anomaly detection method (BTAD) for anomaly detection in multivariate time series data, and proposes corresponding enhancements such as an adaptive multi-head attention mechanism and a modified Decoder structure to further improve BTAD's performance. Experimental results on multiple mainstream multivariate time series datasets demonstrate that BTAD exhibits outstanding overall anomaly detection performance.'
+excerpt: 'This article introduces the Bi-Transformer anomaly detection method for anomaly detection in multivariate time series data'
 date: 2009-10-01
 venue: 'Journal 1'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
