@@ -1,7 +1,7 @@
 ---
 title: "BTAD: A binary transformer deep neural network model for anomaly detection in multivariate time series data"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/2023-03-27-paper-title-number-3
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2009-10-01
 venue: 'Journal 1'
