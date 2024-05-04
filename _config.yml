@@ -12,7 +12,7 @@ title                    : "Mingrui Ma (jkpathfinder) / Personal Homepage"
 title_separator          : "-"
 name                     : &name "Mingrui Ma"
 description              : &description "a second year graduate student from Huazhong University of Science and Technology (HUST)"
-url                      : https://jkpathfinder.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+URL                      : "https://jkpathfinder.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jkpathfinder/jkpathfinder.github.io"
 
