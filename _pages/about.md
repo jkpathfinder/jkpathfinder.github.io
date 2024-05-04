@@ -9,7 +9,6 @@ redirect_from:
 
 I'm a second-year graduate student from [School of CSE](http://cse.hust.edu.cn/), [Huazhong University of Science and Technology](https://www.hust.edu.cn/). My research interests include deep learning, neural networks, natural language processing, artificial intelligence security, and large language models.
 You can find my CV here: [Mingrui Ma's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
-[Email](jkpathfinder@126.com) / [Mobile phone]((+86) 13560048588)
 
 
 A data-driven personal website
