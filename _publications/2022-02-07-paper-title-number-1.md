@@ -1,0 +1,12 @@
+---
+title: "CVDF DYNAMIC—A Dynamic Fuzzy Testing Sample Generation Framework Based on BI-LSTM and Genetic Algorithm"
+collection: publications
+permalink: /publication/2022-02-07-paper-title-number-1
+excerpt: 'This paper proposes CVDF DYNAMIC, a fuzzy testing sample generation framework which utilizes genetic algorithm and BI-LSTM neural network. Experimental results demonstrate that CVDF DYNAMIC can generate dynamic samples with high quality and strong path depth detection ability.'
+date: 2022-02-07
+venue: 'Sensors'
+paperurl: 'http://jkpathfinder.github.io/files/paper1.pdf'
+citation: 'Ma M, Han L, Qian Y. CVDF DYNAMIC—A Dynamic Fuzzy Testing Sample Generation Framework Based on BI-LSTM and Genetic Algorithm[J]. <i>Sensors</i>, 2022, 22(3): 1265.'
+---
+
+As one of the most effective methods of vulnerability mining, fuzzy testing has scalability and complex path detection ability. Fuzzy testing sample generation is the key step of fuzzy testing, and the quality of sample directly determines the vulnerability mining ability of fuzzy tester. At present, the known sample generation methods focus on code coverage or seed mutation under a critical execution path, so it is difficult to take both into account. Therefore, based on the idea of ensemble learning in artificial intelligence, we propose a fuzzy testing sample generation framework named CVDF DYNAMIC, which is based on genetic algorithm and BI-LSTM neural network. The main purpose of CVDF DYNAMIC is to generate fuzzy testing samples with both code coverage and path depth detection ability. CVDF DYNAMIC generates its own test case sets through BI-LSTM neural network and genetic algorithm. Then, we integrate the two sample sets through the idea of ensemble learning to obtain a sample set with both code coverage and vulnerability mining ability for a critical execution path of the program. In order to improve the efficiency of fuzzy testing, we use heuristic genetic algorithm to simplify the integrated sample set. We also innovatively put forward the evaluation index of path depth detection ability (pdda), which can effectively measure the vulnerability mining ability of the generated test case set under the critical execution path of the program. Finally, we compare CVDF DYNAMIC with some existing fuzzy testing tools and scientific research results and further propose the future improvement ideas of CVDF DYNAMIC.
