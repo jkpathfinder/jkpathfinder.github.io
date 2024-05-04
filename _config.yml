@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   location         : "Wuhan, China"
   employer         : "HUST"
-  uri              : "https://jkpathfinder.github.io"
+  uri              : # "https://jkpathfinder.github.io"
   email            : "jkpathfinder@126.com" 
 
   # Academic websites
