@@ -1,11 +1,11 @@
 ---
-title: "Paper Title Number 4"
+title: "Research and application of artificial intelligence based webshell detection model: A literature review"
 collection: publications
 permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
+excerpt: 'This article provides a detailed summary and synthesis of webshell detection solutions based on artificial intelligence technology, analyzes the shortcomings of existing solutions, and predicts the future development trends in the related field.'
 date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+venue: 'Arxiv Preprint'
+paperurl: 'https://arxiv.org/abs/2405.00066'
 citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
 ---
 
