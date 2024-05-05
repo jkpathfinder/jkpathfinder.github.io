@@ -6,6 +6,9 @@ main:
   - title: "Patents and Copyrights"
     url: /patent/
 
+  - title: "Research"
+    url: /research/
+
   - title: "Reviewing"
     url: /reviewing/
 
