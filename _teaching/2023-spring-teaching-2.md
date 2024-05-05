@@ -1,5 +1,5 @@
 ---
-title: "Teaching Assistant for the Undergraduate Course Comprehensive Practice of Network Security"
+title: "Teaching Assistant for the Undergraduate Course \"Comprehensive Practice of Network Security\""
 collection: teaching
 type: "Teaching Assistant"
 permalink: /teaching/2023-spring-teaching-2
