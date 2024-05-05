@@ -3,18 +3,18 @@ main:
   - title: "Publications and Preprints"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/
+  - title: "Invention Patents and Software Copyrights"
+    url: /patent/
 
   - title: "Reviewing"
     url: /reviewing/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
   - title: "Honors and Scholarships"
     url: /portfolio/
-            
+
+  - title: "Teaching"
+    url: /teaching/    
+                
   - title: "CV"
     url: /cv/
     
