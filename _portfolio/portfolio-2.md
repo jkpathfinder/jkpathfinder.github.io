@@ -1,6 +1,6 @@
 ---
 title: "The 2nd China Graduate Network Security Innovation Competition"
-excerpt: "First Prize, Captain & Project Leader <br/><img src='/images/2ndwangan.png'>"
+excerpt: "**First Prize, Captain & Project Leader** <br/><img src='/images/2ndwangan.png'>"
 collection: portfolio
 ---
 
