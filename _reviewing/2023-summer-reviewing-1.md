@@ -1,6 +1,6 @@
 ---
 title: "Official Reviewer for \"Applied Intelligence\""
-collection: reviewing
+collection: teaching
 type: "Official Reviewer"
 permalink: /reviewing/2023-summer-reviewing-1
 venue: "Springer Nature, Germany"
