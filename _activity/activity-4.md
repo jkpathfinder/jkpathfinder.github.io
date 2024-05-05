@@ -1,5 +1,5 @@
 ---
-title: "Science and Innovation Exchange Meeting for Undergraduate, Master\'s and Ph.D. Programs"
+title: "Science and Innovation Exchange Meeting for Undergraduate, Master's and Ph.D. Programs"
 excerpt: "**Keynote Speaker**<br/><img src='/images/activity4.png'>"
 collection: activity
 ---
