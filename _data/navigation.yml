@@ -13,10 +13,7 @@ main:
     url: /portfolio/
 
   - title: "Teaching"
-    url: /teaching/    
-                
-  - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+    url: /teaching/
+
+  - title: "Social Activity"
+    url: /activity/ 
