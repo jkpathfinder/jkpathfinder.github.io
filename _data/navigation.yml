@@ -1,6 +1,6 @@
 # main links links
 main:
-  - title: "Publications"
+  - title: "Publications and Preprints"
     url: /publications/
 
   - title: "Talks"
@@ -11,10 +11,7 @@ main:
     
   - title: "Portfolio"
     url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
+            
   - title: "CV"
     url: /cv/
     
