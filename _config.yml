@@ -191,10 +191,10 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
+  reviewing:
     output: true
     permalink: /:collection/:path/
-  reviewing:
+  teaching:
     output: true
     permalink: /:collection/:path/
   publications:
@@ -228,19 +228,19 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+   # _reviewing
   - scope:
       path: ""
-      type: teaching
+      type: reviewing
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _reviewing
+  # _teaching
   - scope:
       path: ""
-      type: reviewing
+      type: teaching
     values:
       layout: single
       author_profile: true
