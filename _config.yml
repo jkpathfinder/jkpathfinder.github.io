@@ -197,6 +197,9 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
+  patent:
+    output: true
+    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -232,6 +235,15 @@ defaults:
   - scope:
       path: ""
       type: reviewing
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _patent
+  - scope:
+      path: ""
+      type: patent
     values:
       layout: single
       author_profile: true
