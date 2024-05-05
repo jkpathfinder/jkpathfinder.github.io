@@ -4,4 +4,4 @@ excerpt: "First Prize, Captain & Project Leader <br/><img src='/images/2ndwangan
 collection: portfolio
 ---
 
-As the team leader and project leader, led the team to achieve outstanding results by winning the National First Prize in the 2nd China Graduate Network Security Innovation Competition.
+As the captain and project leader, led the team to achieve outstanding results by winning the National First Prize in the 2nd China Graduate Network Security Innovation Competition.
