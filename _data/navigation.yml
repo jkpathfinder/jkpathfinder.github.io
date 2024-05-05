@@ -3,7 +3,7 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Patents and Copyrights"
+  - title: "Patents"
     url: /patent/
 
   - title: "Research"
@@ -12,11 +12,11 @@ main:
   - title: "Reviewing"
     url: /reviewing/
 
-  - title: "Honors and Scholarships"
+  - title: "Honors"
     url: /portfolio/
 
   - title: "Teaching"
     url: /teaching/
 
-  - title: "Social Activities"
+  - title: "Activities"
     url: /activity/ 
