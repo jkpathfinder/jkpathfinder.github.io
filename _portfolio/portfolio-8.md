@@ -1,6 +1,6 @@
 ---
 title: "GENGSHU PRIZE for the 2023 Academic Year"
-excerpt: "**Prize Winner**<br/><img src='/images/500x300.png'>"
+excerpt: "**Prize Winner**<br/><img src='/images/GENGSHU.png'>"
 collection: portfolio
 ---
 
