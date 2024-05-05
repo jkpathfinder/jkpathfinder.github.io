@@ -200,6 +200,9 @@ collections:
   patent:
     output: true
     permalink: /:collection/:path/
+  activity:
+    output: true
+    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -244,6 +247,15 @@ defaults:
   - scope:
       path: ""
       type: patent
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _activity
+  - scope:
+      path: ""
+      type: activity
     values:
       layout: single
       author_profile: true
