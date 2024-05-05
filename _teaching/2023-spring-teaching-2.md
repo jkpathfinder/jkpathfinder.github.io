@@ -8,4 +8,4 @@ date: 2023-03-01
 location: "Wuhan, China"
 ---
 
-Serving as a teaching assistant for the undergraduate experimental course "Comprehensive Practice of Network Security," responsible for tasks including designing and explaining experimental content, answering questions related to experiments, grading assignments, etc.
+Serving as a teaching assistant for the undergraduate experimental course "Comprehensive Practice of Network Security", responsible for tasks including designing and explaining experimental content, answering questions related to experiments, grading assignments, etc.
