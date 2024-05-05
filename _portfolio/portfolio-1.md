@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "The 18th \"Challenge Cup\" National College Student Curricular Academic Science and Technology Works Competition"
+excerpt: "Grand Prize, Captain & Project Leader<br/><img src='/images/tzbguosai.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+As the captain and project leader, led the team to achieve excellent results by winning the National Grand Prize in the 18th "Challenge Cup" National College Students Curricular Academic Science and Technology Works Competition.
