@@ -1,11 +1,11 @@
 ---
-title: "Official Reviewer for \"IEEE Transactions on Intelligent Transportation Systems\""
-collection: reviewing
-type: "Official Reviewer"
-permalink: /reviewing/2023-summer-reviewing-2
-venue: "Institute of Electrical and Electronics Engineers"
-date: 2023-07-03
+title: "Teaching Assistant for the Undergraduate Course \"Comprehensive Practice of Network Security\""
+collection: teaching
+type: "Teaching Assistant"
+permalink: /teaching/2023-spring-teaching-2
+venue: "Huazhong University of Science and Technology, School of Cyber Science and Engineering"
+date: 2023-03-01
 location: "Wuhan, China"
 ---
 
-Official Reviewer for the TOP SCI Journal "IEEE Transactions on Intelligent Transportation Systems" (JCR Q1, IF 8.5). Main review directions include, but are not limited to, neural network architecture and multivariate time series analysis. Relevant review works have been indexed by international databases (e.g. Web of Science, ORCID, etc.).
+Serving as a teaching assistant for the undergraduate experimental course "Comprehensive Practice of Network Security", responsible for tasks including designing and explaining experimental content, answering questions related to experiments, grading assignments, etc.
