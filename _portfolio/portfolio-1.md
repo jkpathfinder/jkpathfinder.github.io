@@ -1,6 +1,6 @@
 ---
 title: "The 18th \"Challenge Cup\" National College Student Curricular Academic Science and Technology Works Competition"
-excerpt: "Grand Prize, Captain & Project Leader<br/><img src='/images/tzbguosai.png'>"
+excerpt: "**Grand Prize, Captain & Project Leader**<br/><img src='/images/tzbguosai.png'>"
 collection: portfolio
 ---
 
