@@ -8,4 +8,4 @@ date: 2023-04-11
 location: "Wuhan, China"
 ---
 
-Contirbuted to 2 Pull-Requests as a major contributor, both of which have been reviewed and merged. One is the modular driver for the GPIO peripheral, and the other is the parsing script for the unreleased D1 chipset.
+Contirbuted to 2 Pull-Requests as a major contributor, both of which have been reviewed and merged. One is the modular driver for the [GPIO peripheral](https://gitee.com/rustsbi/bl-soc/pulls/1), and the other is the parsing script for the [unreleased D1 chipset](https://gitee.com/rustsbi/010-editor-scripts/pulls/1).
