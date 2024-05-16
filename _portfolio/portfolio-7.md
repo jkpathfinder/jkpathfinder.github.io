@@ -4,4 +4,4 @@ excerpt: "**Prize Winner**<br/><img src='/images/GuoJiang.png'>"
 collection: portfolio
 ---
 
-The highest honor of individual scholarships, with a national winning rate of 0.2%.
+The highest national-level individual scholarship honor, with a national winning rate of 0.2%.
