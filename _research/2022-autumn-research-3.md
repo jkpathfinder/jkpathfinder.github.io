@@ -1,5 +1,5 @@
 ---
-title: "The National Key Research and Development Program of China, Grant: 2022YFB3103403"
+title: "The National Key Research and Development Program of China"
 collection: research
 type: "Key Project Member"
 permalink: /research/2022-autumn-research-3
