@@ -1,5 +1,5 @@
 ---
-title: "Official Reviewer for \"IEEE Transactions on Intelligent Transportation Systems\""
+title: "Official Reviewer for \"IEEE Transactions on Intelligent Transportation Systems (TITS)\""
 collection: reviewing
 type: "Official Reviewer"
 permalink: /reviewing/2023-summer-reviewing-2
