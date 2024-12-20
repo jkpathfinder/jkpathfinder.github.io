@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Mingrui Ma / Personal Homepage"
+title                    : "Mingrui Ma"
 title_separator          : "-"
 name                     : &name "Mingrui Ma"
 description              : &description "a third-year graduate student from Huazhong University of Science and Technology (HUST)"
