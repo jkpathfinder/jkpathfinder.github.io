@@ -8,4 +8,4 @@ date: 2024-07-04
 location: "Shenzhen, China"
 ---
 
-Official Reviewer for the SCI Journal "International Journal of Machine Learning and Cybernetics" (JCR Q2, IF 3.1). Main review directions include, but are not limited to, time series analysis, machine decision, and neural network architecture.
+Official Reviewer for the SCI Journal "International Journal of Machine Learning and Cybernetics" (JCR Q2, IF 3.1). Main review directions include but are not limited to, time series analysis, machine decision, and neural network architecture.
