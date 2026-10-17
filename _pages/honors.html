@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "Honors and Scholarships"
+permalink: /honors/
+author_profile: true
+redirect_from:
+  - /portfolio/
+---
+
+<ul class="honor-list">
+{% assign honors = site.honors | sort: "order" %}
+{% for post in honors %}
+  <li class="honor-item">
+    <span class="honor-item__title">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>
+    {% if post.award %}
+    <span class="honor-item__award"><span class="honor-item__icon" aria-hidden="true">{{ post.icon | default: "🏅" }}</span> {{ post.award }}</span>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>

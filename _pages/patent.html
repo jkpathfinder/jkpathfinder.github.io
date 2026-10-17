@@ -5,9 +5,22 @@ permalink: /patent/
 author_profile: true
 ---
 
-{% include base_path %}
-
-
-{% for post in site.patent %}
-  {% include archive-single.html %}
+{% assign groups = "patent|Invention Patents,copyright|Software Copyrights" | split: "," %}
+{% for group in groups %}
+  {% assign key = group | split: "|" | first %}
+  {% assign heading = group | split: "|" | last %}
+  {% assign items = site.patent | where: "category", key %}
+  {% if items.size > 0 %}
+  <h2 class="archive__subtitle">{{ heading }}</h2>
+  <ol class="plain-list">
+    {% for post in items %}
+    <li class="plain-list__item">
+      <span class="plain-list__title">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>
+      <span class="plain-list__meta">
+        {% if post.role contains "Primary" %}<strong>{{ post.role }}</strong>{% else %}{{ post.role }}{% endif %}{% if post.number %} &middot; {{ post.number_label | default: "No." }} {{ post.number }}{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ol>
+  {% endif %}
 {% endfor %}

@@ -1,4 +1,16 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+{% assign vm_endpoint = site.visitor_map.endpoint | default: "" %}
+{% if vm_endpoint != "" %}
+<script>
+  window.VISITOR_MAP = {
+    endpoint: {{ vm_endpoint | jsonify }},
+    trackLocal: {% if site.visitor_map.track_local %}true{% else %}false{% endif %},
+    refresh: {{ site.visitor_map.refresh | default: 60 }},
+    maxPoints: {{ site.visitor_map.max_points | default: 300 }}
+  };
+</script>
+<script src="{{ base_path }}/assets/js/visitor-map.js" defer></script>
+{% endif %}
+
 {% include analytics.html %}
-{% include /comments-providers/scripts.html %}

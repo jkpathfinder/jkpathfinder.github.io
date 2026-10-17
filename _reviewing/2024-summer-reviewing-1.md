@@ -1,11 +1,12 @@
 ---
-title: "Official Reviewer for \"IEEE Transactions on Knowledge and Data Engineering (TKDE)\""
+title: "IEEE Transactions on Knowledge and Data Engineering (TKDE)"
 collection: reviewing
-type: "Official Reviewer"
-permalink: /reviewing/2024-summer-reviewing-1
-venue: "Institute of Electrical and Electronics Engineers"
+category: reviewer
+role: "Reviewer"
+venue: "IEEE"
 date: 2024-07-19
-location: "Shenzhen, China"
+image: "/images/services/tkde.jpg"
+journal_url: "https://www.computer.org/csdl/journal/tk"
+metrics: "SCI · JCR Q1 · CCF-A · IF 11.6"
+description: "Review topics: data science, anomaly detection, and neural network architecture."
 ---
-
-Official Reviewer for the TOP SCI Journal "IEEE Transactions on Knowledge and Data Engineering (TKDE)" (JCR Q1, CCF-A, IF 8.9). Main review directions include, but are not limited to, data science, anomaly detection, and neural network architecture.

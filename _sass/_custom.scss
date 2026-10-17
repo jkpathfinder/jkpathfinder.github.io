@@ -1,0 +1,399 @@
+/* ==========================================================================
+   CUSTOM LIST COMPONENTS
+   Publications, Patents, Academic Services, Honors and the visitor map.
+   ========================================================================== */
+
+$award-color                : #e3242b;
+
+/* sidebar: let long entries (e.g. the institution name) wrap instead of being cut off */
+.author__urls li {
+  white-space: normal;
+}
+
+/* shared thumbnail frame (images are letterboxed, never cropped) */
+%item-thumb {
+  flex: 0 0 auto;
+  overflow: hidden;
+  background: mix(#fff, $lighter-gray, 40%);
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  a {
+    display: block;
+    height: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.archive {
+  .pub-chip,
+  .pub-chip:hover,
+  .pub-item__media a,
+  .pub-item__media a:hover {
+    text-decoration: none;
+  }
+}
+
+
+/*
+   Publications
+   ========================================================================== */
+
+.pub-list {
+  margin-top: 0.5em;
+}
+
+.pub-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em 0;
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @include breakpoint($small) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5em;
+  }
+}
+
+.pub-item__media {
+  @extend %item-thumb;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4 / 3;
+
+  @include breakpoint($small) {
+    width: 220px;
+  }
+}
+
+.pub-item__body {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  p {
+    margin: 0 0 0.5em;
+  }
+}
+
+.pub-item__title {
+  margin: 0 0 0.4em;
+  font-size: 1.1em;
+  line-height: 1.35;
+}
+
+.pub-item__badge {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0.1em 0.6em;
+  font-size: 0.65em;
+  font-weight: bold;
+  line-height: 1.5;
+  vertical-align: middle;
+  color: #fff;
+  background: $success-color;
+  border-radius: 1em;
+}
+
+.pub-item__venue,
+.pub-item__tldr {
+  font-size: 0.85em;
+}
+
+.pub-item__citation {
+  font-size: 0.75em;
+  color: $gray;
+}
+
+.pub-item__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.pub-chip {
+  display: inline-block;
+  padding: 0.15em 0.7em;
+  font-size: 0.7em;
+  line-height: 1.6;
+  color: $link-color;
+  border: 1px solid $link-color;
+  border-radius: $border-radius;
+
+  &:hover {
+    color: #fff;
+    background: $link-color;
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    color: $gray;
+    background: transparent;
+    border-color: $border-color;
+    cursor: default;
+  }
+}
+
+
+/*
+   Academic Services
+   ========================================================================== */
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1.25em 0;
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @include breakpoint($small) {
+    gap: 1.5em;
+  }
+}
+
+.service-item__media {
+  @extend %item-thumb;
+  width: 72px;
+  aspect-ratio: 3 / 4;
+
+  @include breakpoint($small) {
+    width: 96px;
+  }
+}
+
+.service-item__body {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  p {
+    margin: 0 0 0.4em;
+  }
+}
+
+.service-item__title {
+  margin: 0 0 0.35em;
+  font-size: 1em;
+  line-height: 1.35;
+}
+
+.service-item__meta,
+.service-item__desc {
+  font-size: 0.85em;
+}
+
+.service-item__metrics {
+  font-size: 0.75em;
+  font-weight: bold;
+  color: $award-color;
+}
+
+
+/*
+   Plain lists (Patents) and Honors
+   ========================================================================== */
+
+.plain-list {
+  margin: 0.75em 0 1.5em;
+  padding-left: 1.4em;
+}
+
+.plain-list__item {
+  margin-bottom: 0.9em;
+}
+
+.plain-list__title,
+.plain-list__meta {
+  display: block;
+}
+
+.plain-list__meta {
+  font-size: 0.8em;
+  color: $gray;
+}
+
+.honor-list {
+  margin: 0.5em 0 1.5em;
+  padding: 0;
+  list-style: none;
+}
+
+.honor-item {
+  padding: 0.75em 0;
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.honor-item__title,
+.honor-item__award {
+  display: block;
+}
+
+.honor-item__award {
+  margin-top: 0.2em;
+  font-size: 0.9em;
+  color: $award-color;
+}
+
+.honor-item__icon {
+  margin-right: 0.15em;
+}
+
+
+/*
+   Visitor map (home page)
+   ========================================================================== */
+
+$visit-new-color            : #e3242b;
+$visit-old-color            : #2f7fb8;
+
+.visitor-map {
+  margin: 0 0 2em;
+
+  h3 {
+    margin: 0 0 0.5em;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $gray;
+  }
+
+  &--empty p {
+    padding: 1em 1.25em;
+    font-size: 0.8em;
+    color: $gray;
+    border: 1px dashed $light-gray;
+    border-radius: $border-radius;
+  }
+}
+
+.visitor-map__canvas {
+  overflow: hidden;
+  background: #f6f8f9;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}
+
+.visitor-map__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.visitor-map__dot circle {
+  fill: $visit-old-color;
+  fill-opacity: 0.75;
+  stroke: #fff;
+  stroke-width: 1;
+}
+
+.visitor-map__dot--new circle {
+  fill: $visit-new-color;
+  fill-opacity: 0.9;
+}
+
+.visitor-map__dot .visitor-map__pulse {
+  fill-opacity: 0.35;
+  stroke: none;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: visitor-pulse 2s ease-out infinite;
+}
+
+@keyframes visitor-pulse {
+  from { transform: scale(1); opacity: 0.8; }
+  to   { transform: scale(3.2); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visitor-map__dot .visitor-map__pulse {
+    animation: none;
+  }
+}
+
+.visitor-map__legend,
+.visitor-map__summary,
+.visitor-map__note {
+  margin: 0.6em 0 0;
+  font-size: 0.75em;
+  color: $gray;
+}
+
+.visitor-map__summary {
+  font-size: 0.85em;
+  color: $text-color;
+}
+
+.visitor-map__key {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  margin: 0 0.2em 0 0.6em;
+  vertical-align: middle;
+  border-radius: 50%;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &--new { background: $visit-new-color; }
+  &--old { background: $visit-old-color; }
+}
+
+.visitor-map__panels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em 2em;
+  margin-top: 1.25em;
+
+  @include breakpoint($small) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.visitor-map__panel {
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.8em;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 0.3em 0;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.visitor-map__label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.visitor-map__value {
+  flex: 0 0 auto;
+  color: $gray;
+}

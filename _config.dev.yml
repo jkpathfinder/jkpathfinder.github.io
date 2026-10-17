@@ -1,0 +1,10 @@
+# Local development overrides. Use together with the main config:
+#
+#   bundle exec jekyll serve --config _config.yml,_config.dev.yml
+#
+# and run the visitor map worker locally (see visitor-map-worker/README.md).
+visitor_map:
+  endpoint               : "http://127.0.0.1:8787"
+  track_local            : true
+  refresh                : 60
+  max_points             : 300

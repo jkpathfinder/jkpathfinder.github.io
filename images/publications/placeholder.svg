@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#f4f6f7"/>
+  <rect x="0.5" y="0.5" width="399" height="299" fill="none" stroke="#dde2e5" stroke-dasharray="6 5"/>
+  <g fill="none" stroke="#a9b2b8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="150" y="95" width="100" height="76" rx="8"/>
+    <polyline points="162,158 187,130 205,147 222,124 238,158"/>
+  </g>
+  <circle cx="178" cy="117" r="7" fill="#a9b2b8"/>
+  <text x="200" y="208" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="17" fill="#8a949a">Representative Figure</text>
+</svg>

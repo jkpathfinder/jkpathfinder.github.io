@@ -1,0 +1,14 @@
+{
+  "name": "jkpathfinder-visitor-map",
+  "private": true,
+  "description": "Self-hosted visitor map backend (Cloudflare Worker + D1) for jkpathfinder.github.io",
+  "scripts": {
+    "dev": "wrangler dev --port 8787",
+    "db:init:local": "wrangler d1 execute visitor-map --local --file schema.sql",
+    "db:init:remote": "wrangler d1 execute visitor-map --remote --file schema.sql",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.141.0"
+  }
+}

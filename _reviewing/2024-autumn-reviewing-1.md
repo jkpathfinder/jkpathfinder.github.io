@@ -1,11 +1,12 @@
 ---
-title: "Official Reviewer for \"International Journal of Intelligent Systems\""
+title: "International Journal of Intelligent Systems"
 collection: reviewing
-type: "Official Reviewer"
-permalink: /reviewing/2024-autumn-reviewing-1
-venue: "WILEY"
+category: reviewer
+role: "Reviewer"
+venue: "Wiley"
 date: 2024-09-28
-location: "Wuhan, China"
+image: "/images/services/ijis.jpg"
+journal_url: "https://onlinelibrary.wiley.com/journal/ijis"
+metrics: "SCI · JCR Q2 · IF 4.8"
+description: "Review topics: time series analysis and large language models."
 ---
-
-Official Reviewer for the SCI Journal "International Journal of Intelligent Systems" (JCR Q1, IF 5.0). Main review directions include but are not limited to, time series analysis, and large language models.

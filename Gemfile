@@ -1,28 +1,30 @@
 source "https://rubygems.org"
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+# Local preview environment. Run:
 #
-#     bundle exec jekyll serve
+#     bundle install
+#     bundle exec jekyll serve --livereload
 #
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
+# GitHub Pages ignores this file and builds the site with its own `github-pages`
+# stack (Jekyll 3.10). That meta-gem cannot be installed on Ruby >= 4.0 (its
+# `commonmarker` dependency requires Ruby < 4), so the same Jekyll version and
+# the plugins this site uses are listed here directly instead.
 
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 3.10"
+gem "kramdown-parser-gfm"   # `input: GFM` in _config.yml
+gem "liquid", ">= 4.0.4"    # 4.0.3 calls String#tainted?, removed in Ruby 3.2
+gem "webrick", "~> 1.8"     # `jekyll serve` on Ruby >= 3.0
 
-# If you want to use Jekyll native, uncomment the line below.
-# To upgrade, run `bundle update`.
-
-# gem "jekyll"
-
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
-
-# If you have any plugins, put them here!
 group :jekyll_plugins do
-  # gem "jekyll-archives"
-  gem "jekyll-feed"
-  gem 'jekyll-sitemap'
-  gem 'hawkins'
-  gem "webrick", "~> 1.8"
+  gem "jekyll-redirect-from"
+  gem "jekyll-sitemap"
 end
+
+# Standard-library gems that are no longer loaded by default on newer Ruby.
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+gem "logger"
+
+# Windows has no system zoneinfo database.
+gem "tzinfo-data" if Gem.win_platform?

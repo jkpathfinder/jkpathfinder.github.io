@@ -1,11 +1,12 @@
 ---
-title: "Official Reviewer for \"International Journal of Machine Learning and Cybernetics\""
+title: "International Journal of Machine Learning and Cybernetics"
 collection: reviewing
-type: "Official Reviewer"
-permalink: /reviewing/2024-summer-reviewing-2
+category: reviewer
+role: "Reviewer"
 venue: "Springer Nature"
 date: 2024-07-04
-location: "Shenzhen, China"
+image: "/images/services/ijmlc.jpg"
+journal_url: "https://link.springer.com/journal/13042"
+metrics: "SCI · JCR Q3 · IF 2.9"
+description: "Review topics: time series analysis, machine decision-making, and neural network architecture."
 ---
-
-Official Reviewer for the SCI Journal "International Journal of Machine Learning and Cybernetics" (JCR Q2, IF 3.1). Main review directions include but are not limited to, time series analysis, machine decision, and neural network architecture.

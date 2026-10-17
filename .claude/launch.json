@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jekyll",
+      "runtimeExecutable": "bundle.bat",
+      "runtimeArgs": ["exec", "jekyll", "serve", "--config", "_config.yml,_config.dev.yml", "--port", "4000"],
+      "port": 4000
+    },
+    {
+      "name": "visitor-map-worker",
+      "runtimeExecutable": "npm.cmd",
+      "runtimeArgs": ["--prefix", "visitor-map-worker", "run", "dev", "--", "--ip", "127.0.0.1"],
+      "port": 8787
+    }
+  ]
+}

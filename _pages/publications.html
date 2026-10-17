@@ -1,0 +1,42 @@
+---
+layout: archive
+title: "Selected Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% if site.author.googlescholar %}
+<div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+<div class="pub-list">
+{% for post in site.publications reversed %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}
+  {% assign pdf = post.paperurl | default: "" %}
+  {% if pdf != "" %}{% unless pdf contains "://" %}{% assign pdf = pdf | prepend: base_path %}{% endunless %}{% endif %}
+  {% assign status = post.status | default: "" %}
+  {% assign code = post.codeurl | default: "" %}
+  <article class="pub-item">
+    <div class="pub-item__media">
+      {% if pdf != "" %}<a href="{{ pdf }}" target="_blank" rel="noopener" tabindex="-1">{% endif %}
+      {% include item-image.html src=post.image fallback="/images/publications/placeholder.svg" alt=post.title %}
+      {% if pdf != "" %}</a>{% endif %}
+    </div>
+    <div class="pub-item__body">
+      <h2 class="pub-item__title">
+        {% if pdf != "" %}<a href="{{ pdf }}" target="_blank" rel="noopener">{{ title }}</a>{% else %}<span>{{ title }}</span>{% endif %}
+        {% if status != "" %}<span class="pub-item__badge">{{ status }}</span>{% endif %}
+      </h2>
+      <p class="pub-item__venue">{% if status == "" %}Published in {% endif %}<i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+      {% if post.tldr %}<p class="pub-item__tldr">{{ post.tldr }}</p>{% endif %}
+      {% if post.citation %}<p class="pub-item__citation">Recommended citation: {{ post.citation }}</p>{% endif %}
+      <p class="pub-item__links">
+        {% if pdf != "" %}<a class="pub-chip" href="{{ pdf }}" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>{% else %}<span class="pub-chip pub-chip--disabled"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF coming soon</span>{% endif %}
+        {% if code != "" %}<a class="pub-chip" href="{{ code }}" target="_blank" rel="noopener"><i class="fas fa-code" aria-hidden="true"></i> Code</a>{% endif %}
+      </p>
+    </div>
+  </article>
+{% endfor %}
+</div>

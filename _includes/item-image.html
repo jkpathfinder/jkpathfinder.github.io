@@ -1,0 +1,10 @@
+{% comment %}
+  Thumbnail used by list pages.
+  Params: src (path under the site or full URL), fallback (placeholder path), alt.
+  If src is empty or fails to load, the placeholder is shown instead.
+{% endcomment %}
+{% include base_path %}
+{% assign img_src = include.src | default: include.fallback %}
+{% unless img_src contains "://" %}{% assign img_src = img_src | prepend: base_path %}{% endunless %}
+{% assign img_fallback = include.fallback | prepend: base_path %}
+<img src="{{ img_src }}" alt="{{ include.alt | strip_html | escape }}" loading="lazy" onerror="this.onerror=null;this.src='{{ img_fallback }}';">

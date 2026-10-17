@@ -1,0 +1,41 @@
+---
+layout: archive
+title: "Academic Services"
+permalink: /academic-services/
+author_profile: true
+redirect_from:
+  - /reviewing/
+---
+
+{% if site.author.orcid %}
+<div class="wordwrap">You can also find my reviewing records on <a href="{{ site.author.orcid }}">my ORCID scholar profile</a>.</div>
+{% endif %}
+
+{% assign groups = "organizing|Workshop Organization,reviewer|Journal Reviewer" | split: "," %}
+{% for group in groups %}
+  {% assign key = group | split: "|" | first %}
+  {% assign heading = group | split: "|" | last %}
+  {% assign items = site.reviewing | where: "category", key | reverse %}
+  {% if items.size > 0 %}
+<h2 class="archive__subtitle">{{ heading }}</h2>
+<div class="service-list">
+  {% for post in items %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}
+  {% assign journal_url = post.journal_url | default: "" %}
+  <article class="service-item">
+    <div class="service-item__media">
+      {% include item-image.html src=post.image fallback="/images/services/placeholder.svg" alt=post.title %}
+    </div>
+    <div class="service-item__body">
+      <h3 class="service-item__title">
+        {% if journal_url != "" %}<a href="{{ journal_url }}" target="_blank" rel="noopener">{{ title }}</a>{% else %}{{ title }}{% endif %}
+      </h3>
+      <p class="service-item__meta"><strong>{{ post.role }}</strong> &middot; <i>{{ post.venue }}</i> &middot; {{ post.date | date: "%Y" }}</p>
+      {% if post.metrics %}<p class="service-item__metrics">{{ post.metrics }}</p>{% endif %}
+      {% if post.description %}<p class="service-item__desc">{{ post.description | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
+  {% endif %}
+{% endfor %}

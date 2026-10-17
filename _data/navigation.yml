@@ -6,17 +6,8 @@ main:
   - title: "Patents"
     url: /patent/
 
-  - title: "Research"
-    url: /research/
-
-  - title: "Reviewing"
-    url: /reviewing/
+  - title: "Academic Services"
+    url: /academic-services/
 
   - title: "Honors"
-    url: /portfolio/
-
-  - title: "Teaching"
-    url: /teaching/
-
-  - title: "Activities"
-    url: /activity/ 
+    url: /honors/

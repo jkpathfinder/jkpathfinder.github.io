@@ -1,0 +1,30 @@
+{%- comment -%}
+  Home-page visitor map. Data comes from the self-hosted worker configured under
+  `visitor_map` in _config.yml; rendering is done by assets/js/visitor-map.js.
+  Output must not contain blank lines: this include is used inside Markdown.
+{%- endcomment -%}
+{%- include base_path -%}
+{%- assign vm_endpoint = site.visitor_map.endpoint | default: "" -%}
+{%- if vm_endpoint != "" -%}
+<section class="visitor-map" id="visitor-map" aria-labelledby="visitor-map-title">
+<h1 id="visitor-map-title">Visitor Map</h1>
+<div class="visitor-map__canvas">
+<svg class="visitor-map__svg" viewBox="0 0 1000 394" role="img" aria-label="World map of recent visitor locations">
+<image href="{{ base_path }}/assets/visitor-map/world-land.svg" x="0" y="0" width="1000" height="394"/>
+<g class="visitor-map__dots"></g>
+</svg>
+</div>
+<p class="visitor-map__legend"><span class="visitor-map__key visitor-map__key--new"></span> Last 24 hours <span class="visitor-map__key visitor-map__key--old"></span> Earlier</p>
+<p class="visitor-map__summary" aria-live="polite">Loading visitor statistics&hellip;</p>
+<div class="visitor-map__panels">
+<div class="visitor-map__panel"><h3>Top countries / regions</h3><ol class="visitor-map__countries"></ol></div>
+<div class="visitor-map__panel"><h3>Recent visitors</h3><ul class="visitor-map__recent"></ul></div>
+</div>
+<p class="visitor-map__note">Locations are approximate (city level) and no IP addresses are stored.</p>
+</section>
+{%- elsif jekyll.environment != "production" -%}
+<section class="visitor-map visitor-map--empty">
+<h1>Visitor Map</h1>
+<p><strong>Visitor map not configured yet.</strong> Deploy the worker in <code>visitor-map-worker/</code> and set <code>visitor_map.endpoint</code> in <code>_config.yml</code>, or preview locally with <code>--config _config.yml,_config.dev.yml</code>. This hint is only visible during local development.</p>
+</section>
+{%- endif -%}

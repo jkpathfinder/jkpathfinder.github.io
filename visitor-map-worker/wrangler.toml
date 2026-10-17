@@ -1,0 +1,18 @@
+name = "jkpathfinder-visitor-map"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true      # served at https://jkpathfinder-visitor-map.jkpathfinder.workers.dev
+preview_urls = false
+
+[vars]
+# Sites allowed to record visits / read stats from the browser (comma separated).
+ALLOWED_ORIGINS = "https://jkpathfinder.github.io,http://localhost:4000,http://127.0.0.1:4000"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "visitor-map"
+database_id = "c667a596-e72a-4fd5-8d3f-45e74476f9a5"
+
+[triggers]
+# Daily cleanup of the de-duplication table.
+crons = ["17 3 * * *"]

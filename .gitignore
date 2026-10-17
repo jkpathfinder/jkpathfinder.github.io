@@ -1,5 +1,8 @@
-# Ignore the contents of the _site directory
+# Jekyll build output and caches
 _site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
 # Ignore the directory for local files during development
 local/

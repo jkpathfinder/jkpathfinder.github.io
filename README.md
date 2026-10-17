@@ -1,44 +1,49 @@
+# jkpathfinder.github.io
 
-# Academic Pages
+Personal academic homepage of Mingrui Ma, served by GitHub Pages at <https://jkpathfinder.github.io>.
+Built with Jekyll on the [AcademicPages](https://github.com/academicpages/academicpages.github.io) /
+[Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme (MIT License, see `LICENSE`).
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+## Where things live
 
-Academic Pages is a Github Pages template for academic websites.
+| Page | Content | Template |
+| --- | --- | --- |
+| Home | `_pages/about.md` | `_layouts/single.html` + `_includes/visitor-map.html` |
+| Selected Publications | `_publications/*.md` (figures in `images/publications/`, PDFs in `files/`) | `_pages/publications.html` |
+| Patents | `_patent/*.md` (`category: patent` or `copyright`) | `_pages/patent.html` |
+| Academic Services | `_reviewing/*.md` (journal covers in `images/services/`) | `_pages/academic-services.html` |
+| Honors | `_honors/*.md` | `_pages/honors.html` |
 
+* Site settings, sidebar profile and the visitor map endpoint: `_config.yml`.
+* Navigation bar: `_data/navigation.yml`.
+* Page styles for the lists and the visitor map: `_sass/_custom.scss`.
+* CV: `assets/Curriculum_Vitae.pdf`.
 
-# Getting Started
+To add an item, copy an existing file in the matching collection folder and edit its front matter.
+Publications and reviewing entries are shown newest first (by `date`). Images that fail to load fall
+back to the placeholder in the same folder.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## Local preview
 
-See more info at https://academicpages.github.io/
+Requirements: Ruby (with Bundler) and Node.js.
 
-## Running Locally
+```powershell
+bundle install
+npm --prefix visitor-map-worker install
+powershell -ExecutionPolicy Bypass -File serve-local.ps1
+```
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+`serve-local.ps1` starts the visitor map worker (http://127.0.0.1:8787) in a second window and serves the
+site at <http://localhost:4000> with `_config.dev.yml`, which points the map at the local worker.
+Running plain `bundle exec jekyll serve` also works, but the home page then shows a
+"Visitor map not configured yet" hint instead of the map.
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## Visitor map
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essentials gcc make`
+Self-hosted on a free Cloudflare Worker + D1 database; see `visitor-map-worker/README.md` for
+deployment. The map stays hidden on the live site until `visitor_map.endpoint` in `_config.yml` is set.
 
-# Maintenance 
+## Rebuilding the JavaScript bundle
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-Update for republishing.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+`assets/js/main.min.js` is built from `assets/js/_main.js` and `assets/js/plugins/`. Only needed if
+you change those files: `npm install`, then `npm run build:js`.

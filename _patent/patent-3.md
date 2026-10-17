@@ -1,6 +1,8 @@
 ---
-title: "A Method for Multidimensional Graph Tensor Fusion Representation and Embedding of Codes, NO: 2023052300567880"
-excerpt: "**Primary Inventor**<br/><img src='/images/patent3.png'>"
+title: "A Method for Multidimensional Graph Tensor Fusion Representation and Embedding of Codes"
+number: "2023052300567880"
+role: "Primary Inventor"
+category: patent          # patent | copyright
 collection: patent
 ---
 

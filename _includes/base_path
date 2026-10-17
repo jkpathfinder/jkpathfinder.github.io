@@ -1,5 +1,2 @@
-{% if site.url %}
-  {% assign base_path = site.url | append: site.baseurl %}
-{% else %}
-  {% assign base_path = site.github.url %}
-{% endif %}
+{% comment %} Root-relative prefix for site links, so pages work on any host (localhost, 127.0.0.1, github.io). {% endcomment %}
+{% assign base_path = site.baseurl | default: "" %}
