@@ -1,49 +1,65 @@
-# jkpathfinder.github.io
+# Mingrui Ma — Personal Academic Homepage
 
-Personal academic homepage of Mingrui Ma, served by GitHub Pages at <https://jkpathfinder.github.io>.
-Built with Jekyll on the [AcademicPages](https://github.com/academicpages/academicpages.github.io) /
-[Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme (MIT License, see `LICENSE`).
+**🌐 Live site: <https://jkpathfinder.github.io>**
 
-## Where things live
+This repository hosts the personal academic homepage of **Mingrui Ma**, a Ph.D. student in Industrial
+Engineering at the [UbiHealth Lab](https://ubihealth.ise.illinois.edu/),
+[University of Illinois Urbana-Champaign](https://illinois.edu/), advised by
+[Prof. Yiwen Dong](https://yiwen-dong.github.io/).
 
-| Page | Content | Template |
-| --- | --- | --- |
-| Home | `_pages/about.md` | `_layouts/single.html` + `_includes/visitor-map.html` |
-| Selected Publications | `_publications/*.md` (figures in `images/publications/`, PDFs in `files/`) | `_pages/publications.html` |
-| Patents | `_patent/*.md` (`category: patent` or `copyright`) | `_pages/patent.html` |
-| Academic Services | `_reviewing/*.md` (journal covers in `images/services/`) | `_pages/academic-services.html` |
-| Honors | `_honors/*.md` | `_pages/honors.html` |
+My research is interdisciplinary, spanning **AI for healthcare**, **AI-driven clinical decision support
+systems**, **human motion analysis**, **foundation model algorithms**, and **multimodal sensor data
+analysis**. This site collects my research output and academic activities in one place.
 
-* Site settings, sidebar profile and the visitor map endpoint: `_config.yml`.
-* Navigation bar: `_data/navigation.yml`.
-* Page styles for the lists and the visitor map: `_sass/_custom.scss`.
-* CV: `assets/Curriculum_Vitae.pdf`.
+## What's on the site
 
-To add an item, copy an existing file in the matching collection folder and edit its front matter.
-Publications and reviewing entries are shown newest first (by `date`). Images that fail to load fall
-back to the placeholder in the same folder.
+| Section | What you'll find |
+| --- | --- |
+| [Home](https://jkpathfinder.github.io/) | Self introduction, research interests, CV link, and a live world map of site visitors |
+| [Publications](https://jkpathfinder.github.io/publications/) | Papers and preprints, each with a representative figure, a TL;DR, abstract, citation, and PDF link |
+| [Patents](https://jkpathfinder.github.io/patent/) | Publicly disclosed invention patents (including a U.S. patent application) and registered software copyrights |
+| [Academic Services](https://jkpathfinder.github.io/academic-services/) | Peer-review experience, journals reviewed, and organizing roles |
+| [Honors](https://jkpathfinder.github.io/honors/) | Competition awards, honors, and scholarships |
 
-## Local preview
+## Highlights
 
-Requirements: Ruby (with Bundler) and Node.js.
+- **Publication cards** — every paper is shown with a figure, a one-paragraph TL;DR, and status badges
+  such as *Accepted*, so visitors can grasp the work at a glance.
+- **Self-hosted visitor map** — visits are recorded by a small Cloudflare Worker with a D1 database and
+  drawn on a world map on the home page, with no third-party tracking service
+  (see [`visitor-map-worker/`](visitor-map-worker/README.md)).
+- **Content as data** — publications, patents, reviewing records, and honors are each stored as one
+  Markdown file per entry, so adding an item means adding a file rather than editing HTML.
 
-```powershell
-bundle install
-npm --prefix visitor-map-worker install
-powershell -ExecutionPolicy Bypass -File serve-local.ps1
+## Built with
+
+- [Jekyll](https://jekyllrb.com/), deployed automatically by [GitHub Pages](https://pages.github.com/)
+- Based on the [AcademicPages](https://github.com/academicpages/academicpages.github.io) template and the
+  [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme, with custom page layouts and styles
+- [Cloudflare Workers](https://workers.cloudflare.com/) + D1 for the visitor map
+
+## Repository layout
+
+```
+_pages/          Page templates (home, publications, patents, services, honors)
+_publications/   One Markdown file per paper
+_patent/         One Markdown file per patent / software copyright
+_reviewing/      One Markdown file per reviewing or organizing record
+_honors/         One Markdown file per honor or award
+_config.yml      Site settings and sidebar profile
+images/, files/  Figures, logos, and paper PDFs
+visitor-map-worker/  Source of the visitor map backend
 ```
 
-`serve-local.ps1` starts the visitor map worker (http://127.0.0.1:8787) in a second window and serves the
-site at <http://localhost:4000> with `_config.dev.yml`, which points the map at the local worker.
-Running plain `bundle exec jekyll serve` also works, but the home page then shows a
-"Visitor map not configured yet" hint instead of the map.
+## Contact
 
-## Visitor map
+- Email: [mma36@illinois.edu](mailto:mma36@illinois.edu)
+- [Google Scholar](https://scholar.google.com/citations?user=UYycSq8AAAAJ) ·
+  [ORCID](https://orcid.org/0000-0002-2073-6424) ·
+  [LinkedIn](https://www.linkedin.com/in/mingrui-ma-77226037b)
 
-Self-hosted on a free Cloudflare Worker + D1 database; see `visitor-map-worker/README.md` for
-deployment. The map stays hidden on the live site until `visitor_map.endpoint` in `_config.yml` is set.
+## License
 
-## Rebuilding the JavaScript bundle
-
-`assets/js/main.min.js` is built from `assets/js/_main.js` and `assets/js/plugins/`. Only needed if
-you change those files: `npm install`, then `npm run build:js`.
+The site template is released under the MIT License (see [`LICENSE`](LICENSE)), inherited from
+AcademicPages and Minimal Mistakes. Papers, figures, and other personal content belong to their
+respective authors and publishers.
