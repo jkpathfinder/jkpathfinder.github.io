@@ -13,7 +13,7 @@ redirect_from:
 Introduction to the entries
 ======
 1. [Publications](/publications/): Including my own published papers and preprints on Arxiv.
-1. [Patents](/patent/): Including personal publicly disclosed invention patents and obtained software copyrights.
+1. [Patents](/patent/): Including my publicly disclosed invention patents.
 1. [Academic Services](/academic-services/): Including information about my review experience, review history, journals reviewed, etc.
 1. [Honors](/honors/): Including personal honors, competition awards, scholarships, etc.
 

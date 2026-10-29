@@ -17,7 +17,7 @@ analysis**. This site collects my research output and academic activities in one
 | --- | --- |
 | [Home](https://jkpathfinder.github.io/) | Self introduction, research interests, CV link, and a live world map of site visitors |
 | [Publications](https://jkpathfinder.github.io/publications/) | Papers and preprints, each with a representative figure, a TL;DR, abstract, citation, and PDF link |
-| [Patents](https://jkpathfinder.github.io/patent/) | Publicly disclosed invention patents (including a U.S. patent application) and registered software copyrights |
+| [Patents](https://jkpathfinder.github.io/patent/) | Publicly disclosed invention patents (including a U.S. patent application) |
 | [Academic Services](https://jkpathfinder.github.io/academic-services/) | Peer-review experience, journals reviewed, and organizing roles |
 | [Honors](https://jkpathfinder.github.io/honors/) | Competition awards, honors, and scholarships |
 
@@ -43,7 +43,7 @@ analysis**. This site collects my research output and academic activities in one
 ```
 _pages/          Page templates (home, publications, patents, services, honors)
 _publications/   One Markdown file per paper
-_patent/         One Markdown file per patent / software copyright
+_patent/         One Markdown file per patent
 _reviewing/      One Markdown file per reviewing or organizing record
 _honors/         One Markdown file per honor or award
 _config.yml      Site settings and sidebar profile

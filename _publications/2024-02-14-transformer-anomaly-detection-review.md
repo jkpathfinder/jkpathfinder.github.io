@@ -1,6 +1,7 @@
 ---
 title: "Research and application of Transformer based anomaly detection model: A literature review"
 collection: publications
+order: 4                                           # position on the Publications page (1 = top)
 date: 2024-02-14
 venue: 'Arxiv Preprint'
 image: '/images/publications/transformer-anomaly-detection-review.png'   # representative figure

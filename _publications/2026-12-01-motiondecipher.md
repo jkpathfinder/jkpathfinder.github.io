@@ -1,6 +1,7 @@
 ---
 title: "MotionDecipher: LLM-Assisted Clinical Interpretation of Human Motion Signals for Efficient Gait Analysis"
 collection: publications
+order: 1                                           # position on the Publications page (1 = top)
 date: 2026-12-01
 venue: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)'
 image: '/images/publications/motiondecipher.png'   # representative figure

@@ -1,6 +1,7 @@
 ---
 title: "CausalGait: Towards Personalized Gait Interpretation via Causality-Informed Knowledge Graphs"
 collection: publications
+order: 2                                           # position on the Publications page (1 = top)
 date: 2026-10-26
 venue: "HumanSys '26: Proceedings of the 4th International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems"
 image: '/images/publications/causalgait.png'   # representative figure

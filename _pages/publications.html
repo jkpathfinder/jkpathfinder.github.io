@@ -12,7 +12,8 @@ author_profile: true
 {% endif %}
 
 <div class="pub-list">
-{% for post in site.publications reversed %}
+{% assign pubs = site.publications | sort: "order" %}
+{% for post in pubs %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}
   {% assign pdf = post.paperurl | default: "" %}
   {% if pdf != "" %}{% unless pdf contains "://" %}{% assign pdf = pdf | prepend: base_path %}{% endunless %}{% endif %}

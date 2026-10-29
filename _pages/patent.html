@@ -1,11 +1,11 @@
 ---
 layout: archive
-title: "Patents and Copyrights"
+title: "Patents"
 permalink: /patent/
 author_profile: true
 ---
 
-{% assign groups = "patent|Invention Patents,copyright|Software Copyrights" | split: "," %}
+{% assign groups = "patent|Invention Patents" | split: "," %}
 {% for group in groups %}
   {% assign key = group | split: "|" | first %}
   {% assign heading = group | split: "|" | last %}
