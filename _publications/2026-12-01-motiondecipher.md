@@ -9,6 +9,8 @@ image: '/images/publications/motiondecipher.png'   # representative figure
 paperurl: ''                                       # hidden until officially published; set to the DOI link then
 status: 'Accepted'                                 # optional badge, e.g. 'Accepted' / 'To Appear'
 codeurl: ''                                        # optional link to code
+doi: '10.1145/3857982'                             # shown as a DOI link below the TLDR
+doi_note: 'The paper will be officially published in December 2026; this DOI link will become active after publication.'
 tldr: 'TLDR: This paper introduces MotionDecipher, an LLM-based framework that translates continuous human motion signals into clinical gait descriptions through a Human Motion Tokenizer, a Meta Feature Selector, and a Hybrid Context Constructor for In-Context Learning. Evaluated on gait lab data from 122 patients and 46 controls, MotionDecipher achieves 0.91 BERTScore (13% over GPT-5) and is ranked highest by clinical experts in Correctness, Completeness, and Conciseness.'
 ---
 
