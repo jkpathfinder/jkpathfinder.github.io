@@ -3,7 +3,8 @@ title: "MotionDecipher: LLM-Assisted Clinical Interpretation of Human Motion Sig
 collection: publications
 order: 1                                           # position on the Publications page (1 = top)
 date: 2026-12-01
-venue: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)'
+venue: 'ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2027) / Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT 2026)'
+show_year: false                                   # venue already names the years
 image: '/images/publications/motiondecipher.png'   # representative figure
 paperurl: ''                                       # hidden until officially published; set to the DOI link then
 status: 'Accepted'                                 # optional badge, e.g. 'Accepted' / 'To Appear'

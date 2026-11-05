@@ -30,7 +30,7 @@ author_profile: true
         {% if pdf != "" %}<a href="{{ pdf }}" target="_blank" rel="noopener">{{ title }}</a>{% else %}<span>{{ title }}</span>{% endif %}
         {% if status != "" %}<span class="pub-item__badge">{{ status }}</span>{% endif %}
       </h2>
-      <p class="pub-item__venue">{% if status == "" %}Published in {% endif %}<i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</p>
+      <p class="pub-item__venue">{% if status == "" %}Published in {% endif %}<i>{{ post.venue }}</i>{% unless post.show_year == false %}, {{ post.date | date: "%Y" }}{% endunless %}</p>
       {% if post.tldr %}<p class="pub-item__tldr">{{ post.tldr }}</p>{% endif %}
       {% if post.citation %}<p class="pub-item__citation">Recommended citation: {{ post.citation }}</p>{% endif %}
       <p class="pub-item__links">
